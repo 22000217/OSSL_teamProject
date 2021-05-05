@@ -3,7 +3,7 @@
 int createClothes(Clothes *c){
     printf("\n");
     printf("제품명? ");
-    scanf("%[^\n]s",c->name);//asdasdasd
+    scanf("%[^\n]s",c->name);//asdasdasdsdfsdf
 
     printf("가격? ");
     scanf("%d",&c->price);
