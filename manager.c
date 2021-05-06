@@ -1,6 +1,6 @@
 #include "manager.h"
 
-void saveData(Clothes *c, int count){
+void saveData(Clothes *c, int count){ //
 
 }
 
