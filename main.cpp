@@ -1,5 +1,6 @@
 #include <iostream>
-#include "crud_cpp.h"
+#include "crud.h"
+#include "manager.h"
 #define QUIT 0
 #define READ 1
 #define CREATE 2
@@ -152,6 +153,25 @@ int main() {
                 if (check==1) printf("==> 삭제됨\n");
                 break;
             case SEARCH:
+                int searchhow;
+                switch (category()) {
+                    case 0:
+                        cout << "무엇으로 검색하시겠습니까?" << endl;
+                        cout << "이름(1) /  가격(2) / 사이즈(3) / 별점수(4) / 취소(0)" << endl;
+                        cin >> searchhow;
+                        if(searchhow==0) break;
+                        else if(searchhow==1) searchName(top.head, count);
+
+                        break;
+                    case 1:
+                        
+                        break;
+                    case 2:
+                        
+                        break;
+                    case 3:
+                        
+                }
                 break;
             case SAVE:
                 break;

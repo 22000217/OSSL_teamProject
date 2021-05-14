@@ -44,14 +44,14 @@ mini project 주제
 
 ---
 # __검색__
-## int searchName(Clothes *c, int count)
+## void searchName(Clothes *c, int count)
  이름으로 검색
 
-## int searchPrice(Clothes *c, int count)
+## void searchPrice(Clothes *c, int count)
  가격으로 검색
 
-## int searchSize(Clothes *c, int count)
+## void searchSize(Clothes *c, int count)
  사이즈로 검색
 
-## int searchNum_stars(Clothes *c, int count)
+## void searchNum_stars(Clothes *c, int count)
  별 개수로 검색
