@@ -1,6 +1,6 @@
 #include <iostream>
 #include "crud.h"
-#include "manager.h"
+//#include "manager.h"
 #define QUIT 0
 #define READ 1
 #define CREATE 2
@@ -154,20 +154,28 @@ int main() {
                 break;
             case SEARCH:
                 int searchhow;
+                cout << "무엇으로 검색하시겠습니까?" << endl;
+                cout << "이름(1) /  가격(2) / 사이즈(3) / 별점수(4) / 취소(0)" << endl;
+                cin >> searchhow;
+                if(searchhow==0) break;
                 switch (category()) {
                     case 0:
-                        cout << "무엇으로 검색하시겠습니까?" << endl;
-                        cout << "이름(1) /  가격(2) / 사이즈(3) / 별점수(4) / 취소(0)" << endl;
-                        cin >> searchhow;
-                        if(searchhow==0) break;
-                        else if(searchhow==1) searchName(top.head, count);
-
+                        if(searchhow==1) searchName(top.head, count);
+                        else if(searchhow==2) searchPrice(top.head, count);
+                        else if(searchhow==3) searchSize(top.head, count);
+                        else if(searchhow==4) searchNum_stars(top.head, count);
                         break;
                     case 1:
-                        
+                        if(searchhow==1) searchName(bot.head, count);
+                        else if(searchhow==2) searchPrice(bot.head, count);
+                        else if(searchhow==3) searchSize(bot.head, count);
+                        else if(searchhow==4) searchNum_stars(bot.head, count);
                         break;
                     case 2:
-                        
+                        if(searchhow==1) searchName(dress.head, count);
+                        else if(searchhow==2) searchPrice(dress.head, count);
+                        else if(searchhow==3) searchSize(dress.head, count);
+                        else if(searchhow==4) searchNum_stars(dress.head, count);
                         break;
                     case 3:
                         
