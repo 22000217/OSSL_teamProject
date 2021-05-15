@@ -1,6 +1,6 @@
 #include <iostream>
 #include "crud.h"
-//#include "manager.h"
+#include "manager.h"
 #define QUIT 0
 #define READ 1
 #define CREATE 2
