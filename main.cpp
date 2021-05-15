@@ -178,7 +178,9 @@ int main() {
                         else if(searchhow==4) searchNum_stars(dress.head, count);
                         break;
                     case 3:
-                        
+                    cout << "category 1. 상의에서" << endl;
+                    cout << "category 2. 하의에서" << endl;
+                    cout << "category 3. 드레스에서" << endl;
                 }
                 break;
             case SAVE:
