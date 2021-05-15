@@ -1,4 +1,4 @@
-#include "crud_cpp.h"
+#include "crud.h"
 
 void Clothes::set_data(string n, int p, string s, int r, int ns) {
     name = n;
@@ -142,6 +142,16 @@ Clothes createClothes() {
     scanf("%d",&numStars);
     c.set_numStars(numStars);
 
+    return c;
+}
+
+Clothes createClothes(string newname, int newprice, string newsize, int newreivew, int newnumStars) {
+    Clothes c;
+    c.set_name(newname);
+    c.set_price(newprice);
+    c.set_size(newsize);
+    c.set_review(newreivew);
+    c.set_numStars(newnumStars);
     return c;
 }
 

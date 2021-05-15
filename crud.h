@@ -1,23 +1,18 @@
-#include <stdio.h>
-#include <string.h>
+#include <iostream>
+#include <cstring>
+#include "class.h"
 
-typedef struct {
-char name[30]; // 제품명
-int price; // 가격
-char size; // 사이즈(S, M, L, F(Free))
-int review; // 리뷰개수
-int num_stars; // 별점개수
-Clothes *link; // 다음 node를 가리키는 포인터 변수 n
-}Clothes;
+using namespace std;
 
-Clothes clist[100]; //포인터 배열 변수 선언
+int menu();
 
-int createClothes(Clothes *c);
+int category();
+
+Clothes createClothes();
+Clothes createClothes(string newname, int newprice, string newsize, int newreivew, int newnumStars);
 
 void readClothes(Clothes *c);
 
-void listClothes(Clothes *c, int count);
-
 int updateClothes(Clothes *c);
 
-int deleteClothes(Clothes *c);
+int deleteClothes(Product *p);

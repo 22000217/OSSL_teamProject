@@ -1,7 +1,7 @@
 ## 구성한 기능(함수)
 ---
 # __CRUD__
-## int createClothes(Clothes *c) 
+## Clothes createClothes() 
  Create : 카테고리 맞는 새 구조체 생성
 
 ## void readClothes(Clothes *c)
@@ -15,22 +15,22 @@
 
 ---
 # __DATA FILE__
-## void saveData(Clothes *c);
+## void saveData(string filename, Clothes *c);
  데이터 저장
 
-## int loadData(Clothes *c); 
+## void loadData(string filename, Clothes *c); 
  데이터 읽어오기
 
 ---
 # __검색__
-## searchName(Clothes *c, int count)
+## void searchName(Clothes *c, int count, string target)
  이름으로 검색
 
-## searchPrice(Clothes *c, int count)
+## void searchPrice(Clothes *c, int count, int target)
  가격으로 검색
 
-## searchSize(Clothes *c, int count)
+## void searchSize(Clothes *c, int count, string target)
  사이즈로 검색
 
-## searchNum_stars(Clothes *c, int count)
+## void searchNum_stars(Clothes *c, int count, int target)
  별 개수로 검색

@@ -1,4 +1,5 @@
 #include <iostream>
+#include <string> //getline
 
 using namespace std;
 
